@@ -1,0 +1,19 @@
+﻿
+@{
+}
+
+@model IQueryable<Team>
+
+
+<h1>Teams</h1>
+
+
+<ul>
+    @foreach (var t in Model)
+    {
+        <li>
+            @t.TeamName
+        </li>
+    }
+
+</ul>
